@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Script from "next/script";
 import React from "react";
-import { SITE_INFO } from "../config";
+import { SITE_INFO, SITE_URL } from "../config";
 
 import { ReactNode } from "react";
 import StyledComponentsRegistry from "../lib/registry";
@@ -17,8 +17,8 @@ export const metadata = {
   },
   alternates: {
     languages: {
-      en: "https://okaziya.github.io/cv/en",
-      sv: "https://okaziya.github.io/cv/sv",
+      en: `${SITE_URL}/en`,
+      sv: `${SITE_URL}/sv`,
     },
   },
 };

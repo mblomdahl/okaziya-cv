@@ -1,14 +1,12 @@
 import { Metadata } from "next";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import { CONTACT_INFO } from "../../config";
+import { CONTACT_INFO, SITE_URL } from "../../config";
 import { LocaleProvider } from "../../context/LocaleContext";
 import en from "../../locales/en";
 import sv from "../../locales/sv";
 import { Locale } from "../../types";
 import { generateJsonLdForEmploymentCv, generateJsonLdForConsultantCv } from "../../utils/jsonld";
-
-const SITE_URL = "https://okaziya.github.io/cv";
 const locales = { en, sv } as const;
 
 export async function generateStaticParams(): Promise<{ locale: Locale }[]> {
@@ -33,7 +31,7 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
       url: `${SITE_URL}/${params.locale}`,
       siteName: CONTACT_INFO.name,
       images: [{ url: `${SITE_URL}/profile-photo.png` }],
-      locale: params.locale,
+      locale: params.locale === "sv" ? "sv_SE" : "en_US",
       type: "profile",
     },
   };

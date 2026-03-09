@@ -6,6 +6,8 @@ export const CONTACT_INFO = {
   github: "https://github.com/okaziya",
 };
 
+export const SITE_URL = "https://okaziya.github.io/cv";
+
 export const SITE_INFO = {
   title: "CV | Liza Blomdahl - Full Stack Developer",
   description: "Professional CV of Liza Blomdahl – a skilled Full Stack Developer.",

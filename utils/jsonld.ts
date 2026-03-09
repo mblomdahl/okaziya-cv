@@ -1,9 +1,7 @@
 import { Locale } from "../types";
-import { CONTACT_INFO } from "../config";
+import { CONTACT_INFO, SITE_URL } from "../config";
 import en from "../locales/en";
 import sv from "../locales/sv";
-
-const SITE_URL = "https://okaziya.github.io/cv";
 const locales = { en, sv } as const;
 
 function parseCompanyTitle(companyTitle: string): { name: string; location?: string } {
