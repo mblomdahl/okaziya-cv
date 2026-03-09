@@ -13,7 +13,10 @@ import { getImagePath } from "../../utils/imagePath";
 export default function LocaleHomePage() {
   return (
     <>
-      {/* Uncomment PDFViewer below for live preview when updating CvDocument */}
+      {/* For live PDF preview, add these imports and uncomment the block below:
+          import { PDFViewer } from "@react-pdf/renderer";
+          import CvDocument from "../../components/CvDocument";
+      */}
       {/* <PDFViewer style={{ width: "100%", height: "90vh" }}>
         <CvDocument />
       </PDFViewer> */}
