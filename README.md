@@ -35,8 +35,8 @@ To test the production build locally (mirrors GitHub Pages basePath):
 
 ```sh
 npm run build
-ln -sf ../out dist/cv   # one-time setup
-npm start               # serves at http://localhost:3000/cv/
+mkdir -p dist && ln -sf ../out dist/cv   # one-time setup
+npm start                                # serves at http://localhost:3000/cv/
 ```
 
 Format the code correctly with Prettier before submitting a PR, `npm run format`.

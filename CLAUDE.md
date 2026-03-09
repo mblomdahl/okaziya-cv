@@ -10,7 +10,7 @@ Personal CV website for Liza Blomdahl, deployed as a static site to GitHub Pages
 
 - `npm run dev` — Start dev server (sets `NEXT_PUBLIC_SITE_URL=http://localhost:3000/cv`)
 - `npm run build` — Static export build (outputs to `out/`)
-- `npm run start` — Serve the built site locally via `npx serve` (requires `dist/cv -> ../out` symlink for correct basePath)
+- `npm run start` — Serve the built site locally via `serve` (requires `mkdir -p dist && ln -sf ../out dist/cv` for correct basePath)
 - `npm run format` — Format all files with Prettier
 
 There are no test scripts or linting commands configured.
