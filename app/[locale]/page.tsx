@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-// import { PDFViewer } from "@react-pdf/renderer";
 import HeroSection from "../../components/HeroSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import WorkExperienceSection from "../../components/WorkExperienceSection";
@@ -10,12 +9,11 @@ import EducationSection from "../../components/EducationSection";
 import LanguagesSection from "../../components/LanguagesSection/LanguagesSection";
 import Image from "next/image";
 import { getImagePath } from "../../utils/imagePath";
-// import CvDocument from "../../components/CvDocument";
 
 export default function LocaleHomePage() {
   return (
     <>
-      {/* In case if its needet to see the changes directly when updating the CVDocument */}
+      {/* Uncomment PDFViewer below for live preview when updating CvDocument */}
       {/* <PDFViewer style={{ width: "100%", height: "90vh" }}>
         <CvDocument />
       </PDFViewer> */}

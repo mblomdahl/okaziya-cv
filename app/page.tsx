@@ -13,8 +13,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <p>Redirecting to your language...</p>
+    <div className="d-flex flex-column align-items-center justify-content-center" style={{ minHeight: "50vh" }}>
+      <p>Choose your language / Välj språk:</p>
+      <nav>
+        <ul className="list-unstyled d-flex gap-3">
+          <li>
+            <a href="/cv/en">English</a>
+          </li>
+          <li>
+            <a href="/cv/sv">Svenska</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

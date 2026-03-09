@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "NEXT_PUBLIC_SITE_URL=http://localhost:3000/cv next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve@latest dist -l 3000",
     "format": "prettier --write ."
   },
   "keywords": [],
@@ -19,7 +19,6 @@
     "@types/node": "^22.7.4",
     "@types/react": "^18.3.11",
     "bootstrap": "^5.3.3",
-    "bowser": "^2.11.0",
     "lucide-react": "^0.475.0",
     "next": "^14.2.14",
     "react": "^18.3.1",

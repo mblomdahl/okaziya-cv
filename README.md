@@ -18,6 +18,7 @@ development tasks, such as ...
    - [x] I know about styling/theming
    - [x] I can do responsive design
    - [x] I make content that is readable by robots and humans alike
+   - [ ] I know how to do AEO/SEO (JSON-LD, Open Graph, sitemap, robots.txt)
 
 ## Development Environment
 
@@ -28,6 +29,14 @@ git clone git@github.com:okaziya/cv.git okaziya-cv
 cd okaziya-cv/
 npm install
 npm run dev
+```
+
+To test the production build locally (mirrors GitHub Pages basePath):
+
+```sh
+npm run build
+ln -sf ../out dist/cv   # one-time setup
+npm start               # serves at http://localhost:3000/cv/
 ```
 
 Format the code correctly with Prettier before submitting a PR, `npm run format`.

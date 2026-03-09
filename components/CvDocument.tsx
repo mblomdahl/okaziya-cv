@@ -324,10 +324,9 @@ const CvDocument = () => (
           {/* Languages */}
           <View style={styles.section}>
             <Text style={styles.title}>Språk</Text>
-            <Text style={styles.languageRow}>Svenska – Mellannivå (på väg mot B2)</Text>
-            <Text style={styles.languageRow}>Engelska – Övre medelnivå (B2)</Text>
+            <Text style={styles.languageRow}>Svenska – Övre medelnivå (B2)</Text>
+            <Text style={styles.languageRow}>Engelska – Avancerad (C1)</Text>
             <Text style={styles.languageRow}>Tjeckiska – Flytande (C2)</Text>
-            <Text style={styles.languageRow}>Ryska – Flytande (C2)</Text>
           </View>
         </View>
 
@@ -744,17 +743,27 @@ const CvDocument = () => (
           </Text>
         </View>
         <View style={styles.additionalExperience}>
-          <Text style={styles.projectTitle}>Övriga anställningar</Text>
+          <Text style={styles.projectTitle}>Övriga yrkeserfarenheter</Text>
           <View>
             <View style={styles.row}>
-              <Text style={styles.subtitle}>Egenföretagare inom frisöryrket</Text>
+              <Text style={styles.subtitle}>Frisör, egenföretagare</Text>
               <Text style={styles.year}>(2016-01–2019-05)</Text>
             </View>
             <Text style={styles.organizationName}>Hair Salon 41 – Prag, Tjeckien</Text>
-            {/* <View style={styles.listItem}>
+            <View style={styles.listItem}>
               <Text style={styles.bullet}>•</Text>
-              <Text style={styles.itemContent}></Text>
-            </View> */}
+              <Text style={styles.itemContent}>
+                Tre och ett halvt års arbete som frisör, specialiserad på hårfärgning och en av de främsta inom detta
+                nischområde.
+              </Text>
+            </View>
+            <View style={styles.listItem}>
+              <Text style={styles.bullet}>•</Text>
+              <Text style={styles.itemContent}>
+                Ansvarig för marknadsföring, sociala medier, samarbeten med olika frisörsalonger, vård av
+                kundrelationer, ekonomi m.m.
+              </Text>
+            </View>
           </View>
         </View>
       </View>

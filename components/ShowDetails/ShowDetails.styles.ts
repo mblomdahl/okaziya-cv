@@ -35,7 +35,7 @@ export const Details = styled.div.withConfig({
 })<{ isExpanded: boolean }>`
   width: 100%;
   overflow: hidden;
-  transition: ${({ theme }) => (theme.isSafari ? "none" : "max-height 0.3s ease-in-out, opacity 0.3s ease-in-out")};
+  transition: opacity 0.3s ease-in-out;
 
   max-height: ${({ isExpanded }) => (isExpanded ? "100%" : "0")};
   opacity: ${({ isExpanded }) => (isExpanded ? 1 : 0)};
