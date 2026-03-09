@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "NEXT_PUBLIC_SITE_URL=http://localhost:3000/cv next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "serve dist -l 3000",
     "format": "prettier --write ."
   },
   "keywords": [],
@@ -19,7 +19,6 @@
     "@types/node": "^22.7.4",
     "@types/react": "^18.3.11",
     "bootstrap": "^5.3.3",
-    "bowser": "^2.11.0",
     "lucide-react": "^0.475.0",
     "next": "^14.2.14",
     "react": "^18.3.1",
@@ -31,6 +30,7 @@
   "devDependencies": {
     "@types/styled-components": "^5.1.34",
     "babel-plugin-styled-components": "^2.1.4",
-    "prettier": "^3.4.2"
+    "prettier": "^3.4.2",
+    "serve": "^14.2.6"
   }
 }

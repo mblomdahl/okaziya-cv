@@ -132,7 +132,7 @@ const en = {
             "Building a CustomGPT with my partner\n" +
             "Using Python Click for command line tool development\n" +
             "Learning to deal with Python projects (tests and stuff)\n",
-          // 2025-03 and ongoing
+          // 2025-03 to 2025-09
           "SFX-IT":
             "Going to SFX-IT in Tyresö\n" +
             "Completing SFI levels C and D\n" +
@@ -366,18 +366,14 @@ const en = {
     languages: [
       {
         name: "Swedish",
-        level: "Intermediate (in progress, B1–B2)",
-      },
-      {
-        name: "English",
         level: "Upper-Intermediate (B2)",
       },
       {
-        name: "Czech",
-        level: "Proficient (C2)",
+        name: "English",
+        level: "Advanced (C1)",
       },
       {
-        name: "Russian",
+        name: "Czech",
         level: "Proficient (C2)",
       },
     ],

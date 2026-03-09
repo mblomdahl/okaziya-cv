@@ -420,18 +420,14 @@ const sv = {
     languages: [
       {
         name: "Svenska",
-        level: "Mellannivå (på väg mot B2)",
-      },
-      {
-        name: "Engelska",
         level: "Övre medelnivå (B2)",
       },
       {
-        name: "Tjeckiska",
-        level: "Flytande (C2)",
+        name: "Engelska",
+        level: "Avancerad (C1)",
       },
       {
-        name: "Ryska",
+        name: "Tjeckiska",
         level: "Flytande (C2)",
       },
     ],
