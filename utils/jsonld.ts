@@ -71,7 +71,7 @@ export function generateJsonLdForConsultantCv(locale: Locale) {
     return {
       "@type": isUniversity ? "CollegeOrUniversity" : "EducationalOrganization",
       name,
-      ...(location && { location }),
+      ...(location && { location: { "@type": "Place", name: location } }),
     };
   });
 
@@ -126,7 +126,7 @@ export function generateJsonLdForEmploymentCv(locale: Locale) {
     return {
       "@type": isUniversity ? "CollegeOrUniversity" : "EducationalOrganization",
       name,
-      ...(location && { location }),
+      ...(location && { location: { "@type": "Place", name: location } }),
     };
   });
 

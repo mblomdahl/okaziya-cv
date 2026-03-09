@@ -23,11 +23,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children, params }: { children: ReactNode; params: { locale: Locale } }) {
+export default function RootLayout({ children, params }: { children: ReactNode; params?: { locale: Locale } }) {
   return (
-    <html lang={params.locale}>
-      <Script defer src="https://cloud.umami.is/script.js" data-website-id="24a69cac-c400-483f-a3d1-be3527ddc341" />
+    <html lang={params?.locale ?? "sv"}>
       <body className={nunitoSans.className}>
+        <Script defer src="https://cloud.umami.is/script.js" data-website-id="24a69cac-c400-483f-a3d1-be3527ddc341" />
         <StyledComponentsRegistry>
           <ThemeWrapper>{children}</ThemeWrapper>
         </StyledComponentsRegistry>

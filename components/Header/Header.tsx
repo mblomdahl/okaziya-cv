@@ -7,10 +7,10 @@ import { ImageWrapper, StyledHeader } from "./Header.styles";
 import { getImagePath } from "../../utils/imagePath";
 
 import dynamic from "next/dynamic";
-
-const DownloadPdfButton = dynamic(() => import("./DownloadPdfLink"), { ssr: false });
 import { useLocale } from "../../context/LocaleContext";
 import { getTranslation } from "../../lib/getTranslation";
+
+const DownloadPdfButton = dynamic(() => import("./DownloadPdfLink"), { ssr: false });
 
 export default function Header() {
   const { locale } = useLocale();
